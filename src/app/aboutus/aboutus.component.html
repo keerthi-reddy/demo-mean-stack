@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body >
+    <div class="container">
+        <table class="table table-bordered">
+            <thead>
+                <th>UserId</th>
+                <th>Id</th>
+                <th>Title</th>
+            </thead>
+            <tr *ngFor="let obj of dataarray">
+                <td>{{obj.userId}}</td>
+                <td>{{obj.id}}</td>
+                <td>{{obj.title}}</td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>

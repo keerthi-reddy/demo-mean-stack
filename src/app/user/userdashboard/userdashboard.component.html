@@ -1,0 +1,9 @@
+<a routerLink="/userprofile">userdashboard Profile</a>
+<div class="text-center">
+    <h1>welcome {{username}}</h1>
+    <!-- <button (click)="sendTestReq()">test</button> -->
+    <img *ngIf="isImageLoaded" [src]="userObj.profileImageUrl" width="80px" alt="">
+</div>
+<div>
+    <router-outlet></router-outlet>
+</div>

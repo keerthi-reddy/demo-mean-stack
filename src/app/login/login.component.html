@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <form #ref="ngForm" (ngSubmit)="submitForm(ref.value)"> 
+            <label for="">Choose role</label>
+            <div class="form-check">
+                <input type="radio" name="role" id="ad" value="admin" ngModel>
+                <label for="ad">Admin</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="role" id="u" value="user" ngModel>
+                <label for="u">User</label>
+            </div>
+            <div class="form-check">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" ngModel>
+            </div>
+            <div class="form-check">
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password" ngModel>
+            </div>
+            <input type="submit" class="btn btn-primary">
+        </form>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
